@@ -29,8 +29,8 @@ Product performance reporting is outside the first version’s scope.
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------- |
 | Employee / operator | Submit purchase requests, record incoming goods, and enter inventory and expiry information.                             | Yes              |
 | Boss / approver     | Review purchase requests and record approval decisions.                                                                  | Yes              |
-| Purchasing officer  | Procurement responsibilities currently sit within the employee role. Whether a separate role is needed is **to decide**. | To decide        |
-| Admin               | Responsibilities have not yet been defined.                                                                              | To decide        |
+
+Procurement responsibilities are included in the employee / operator role. Separate purchasing officer and admin roles are outside the MVP scope.
 
 **To decide:** Whether “boss” and “manager” represent the same approver role, and whether operators need distinct permissions for procurement and warehouse work.
 
@@ -81,6 +81,7 @@ Product performance reporting is outside the first version’s scope.
 
 ### Out of Scope
 
+- Separate purchasing officer and admin roles.
 - Purchase order creation.
 - Invoice approval.
 - Payment processing.
@@ -91,7 +92,6 @@ Product performance reporting is outside the first version’s scope.
 
 - What information must a purchase request contain?
 - Who may approve or reject a request?
-- Are purchasing officer and admin separate roles in the MVP?
 - Which activities decrease inventory?
 - How are received goods connected to approved requests?
 - What counts as “close to expiry”?

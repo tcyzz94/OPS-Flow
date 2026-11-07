@@ -86,11 +86,11 @@ Dependencies and architectural decisions will be documented as they are adopted,
 
 **Week 1 — Define the problem and establish the foundation.**
 
-The [product brief](Week%201/product%20brief.md) limits the first version to purchase-request approval, inventory tracking, and expiry warnings. Purchase order creation, invoice approval, and payment processing are excluded. These features remain planned; the next target is to finish the brief's wording and success measures, then define workflow requirements before implementation.
+The [product brief](Week%201/product%20brief.md) limits the first version to purchase-request approval, inventory tracking, and expiry warnings. Purchase order creation, invoice approval, and payment processing are excluded. These features remain planned. The Week 1 Day 01 review found that the brief still needs explicit role responsibilities and three use cases. **Next:** finish those items and resolve the brief's placeholders before moving to Day 02 workflow rules.
 
 ### Progress updates
 
-- **2026-11-07 — Week 1: Product brief drafted and scope clarified.** Reviewed the initial problem, users, and proposed solution; limited the MVP to purchase-request approval, inventory tracking, and expiry warnings. Chapter 01 remains planned pending implementation. **Next:** finish the brief's wording and success measures, then define workflow requirements.
+- **2026-11-07 — Week 1: Day 01 brief reviewed against the workbook.** Problem framing and an out-of-scope list are present; role definitions and three explicit use cases remain incomplete. Chapter 01 remains planned pending implementation. **Next:** complete the Day 01 brief, then document workflow rules.
 
 ## Why this repository is public
 

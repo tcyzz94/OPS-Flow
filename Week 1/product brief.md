@@ -1,47 +1,108 @@
-# Product Name: OPS flow
+# OPSFlow — Product Brief
 
-## Purpose Statement:
+## 1. Purpose
 
-Helps employee to get approval from their manages while corelate into their inventory ssystem
+OPSFlow helps employees request purchase approvals and manage inventory so that businesses can track approval decisions, stock levels, and product expiry.
 
-## Problem Statement:
+## 2. Problem Statement
 
-- Users found out there are times where their iventory are not being able to supply the demands.
-- Users found that their stocks are often expiry due to they have very big inventory is easier to missed out on the expiry products
-- Approvals of procurement are often by email or sms and is not recorded inside a systems.
-- Bosses are unable to track of their product performance.
+### Current Process
 
-## Target Users:
+Purchase approvals are handled through email or SMS without being recorded in a central system.
 
-- Employees, they are responsible for daily operation such as administrative work, logistics, stock counting, procurement,shipment
-- Bossses, they are responsible for overall operation and direction of the company
+### Main Problems
 
-## Proposed Solution
+- Inventory sometimes cannot meet demand.
+- Expiring products can be overlooked in large inventories.
+- Purchase approval records are scattered across messages.
+- Business owners lack visibility into product performance.
 
-### Overview
+### Impact
 
-OPSFlow will provide users with a inventory management system with approval workflow to help them resolve their problems such as below.
+These problems make it difficult to identify replenishment needs, manage ageing stock, and trace past approval decisions.
 
-### Purchase and approval workflow
+Product performance reporting is outside the first version’s scope.
 
-Operators will submit purchase requests containing [procurement information]. Bosses will review each request and approve those . The system will record these approval so users can track inventory, check past approval .
+## 3. Target Users and Responsibilities
 
-### Inventory tracking
+| Role                | Responsibilities in OPSFlow                                                                                              | Included in MVP? |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| Employee / operator | Submit purchase requests, record incoming goods, and enter inventory and expiry information.                             | Yes              |
+| Boss / approver     | Review purchase requests and record approval decisions.                                                                  | Yes              |
+| Purchasing officer  | Procurement responsibilities currently sit within the employee role. Whether a separate role is needed is **to decide**. | To decide        |
+| Admin               | Responsibilities have not yet been defined.                                                                              | To decide        |
 
-When goods arrive, Operators will record item into the system. Inventory quantities will increase when shipment arrived and decrease accordingly. This will help users keep track of their inventory.
+**To decide:** Whether “boss” and “manager” represent the same approver role, and whether operators need distinct permissions for procurement and warehouse work.
 
-### Expiry visibility
+## 4. Three Core Use Cases
 
-Operators will enter expiry information when item arrived on warehouse. The system will [display warnings or send notifications] when [expired or close to expiry date], allowing users to take care of it.
+### Use Case 1 — Request Purchase Approval
 
-### First-version boundary
+- **Actor:** Employee / operator and boss / approver.
+- **Goal:** Obtain and retain a recorded purchase approval.
+- **Starting condition:** An employee identifies a purchasing need.
+- **Main steps:**
+  1. The employee submits a purchase request.
+  2. The boss reviews the request.
+  3. The boss records an approval decision.
+- **Expected result:** The decision is stored and can be checked later.
+- **To decide:** Required request information, rejection behavior, and who may approve each request.
 
-The first version will focus on approvals and inventory. Perfomances benchmark,sales perfomance will remain outside its scope.
+### Use Case 2 — Record Incoming Inventory
 
-### Expected outcome
+- **Actor:** Employee / operator.
+- **Goal:** Keep inventory records up to date when goods arrive.
+- **Starting condition:** A shipment arrives at the warehouse.
+- **Main steps:**
+  1. The operator records the received items.
+  2. The system increases the recorded inventory quantities.
+- **Expected result:** Inventory reflects the received goods.
+- **To decide:** How receipts relate to approved requests and which actions decrease inventory.
 
-These capabilities aim to reduce inventory counting and aging issue and improve likeleness of missing out on their stock expiry or when to restock. Their effectiveness will be assessed later using past records after system is completed
+### Use Case 3 — Identify Expiring Stock
 
-## Scope & Deliverables:
+- **Actor:** Employee / operator.
+- **Goal:** Identify stock that needs attention because of its expiry date.
+- **Starting condition:** The operator has recorded expiry information for received goods.
+- **Main steps:**
+  1. The operator enters expiry information when goods arrive.
+  2. The system identifies expired or soon-to-expire stock.
+  3. The system makes the warning available to users.
+- **Expected result:** Users can identify affected stock and take action.
+- **To decide:** The warning threshold and whether warnings appear in the system or are sent as notifications.
 
-The first version will support purchase-request approval, inventory tracking, and expiry warnings. Purchase order creation, invoice approval, and payment processing are outside its scope.
+## 5. MVP Scope
+
+### Included
+
+- Purchase-request approval and recorded approval history.
+- Inventory tracking.
+- Expiry warnings.
+
+### Out of Scope
+
+- Purchase order creation.
+- Invoice approval.
+- Payment processing.
+- Product and sales performance reporting.
+- Performance benchmarking.
+
+## 6. Decisions to Clarify
+
+- What information must a purchase request contain?
+- Who may approve or reject a request?
+- Are purchasing officer and admin separate roles in the MVP?
+- Which activities decrease inventory?
+- How are received goods connected to approved requests?
+- What counts as “close to expiry”?
+- Where will users see expiry warnings?
+
+## 7. Expected Outcomes
+
+OPSFlow aims to:
+
+- Improve visibility into stock levels and replenishment needs.
+- Help users identify ageing and expiring inventory.
+- Make purchase approval decisions easier to trace.
+
+Effectiveness will be assessed using recorded operational history after the system is completed. Specific success measures remain **to decide**.

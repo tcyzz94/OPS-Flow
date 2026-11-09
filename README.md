@@ -86,9 +86,13 @@ Dependencies and architectural decisions will be documented as they are adopted,
 
 **Week 1 — Define the problem and establish the foundation.**
 
-The [product brief](README/product%20brief.md) limits the first version to purchase-request approval, inventory tracking, and expiry warnings, with employee / operator and boss / approver roles. Separate purchasing officer and admin roles, purchase order creation, invoice approval, and payment processing are excluded. These features remain planned. The [Day 02 workflow rules](README/workfloe-rules.md) document the reviewed MVP behavior for all three use cases. **Next:** sketch the purchase request data model, including request items, status, and decision history.
+The [product brief](README/product%20brief.md) limits the first version to purchase-request approval, inventory tracking, and expiry warnings, with employee / operator and boss / approver roles. Separate purchasing officer and admin roles, purchase order creation, invoice approval, and payment processing are excluded. These features remain planned. The [Day 02 workflow rules](README/workfloe-rules.md) cover all three use cases. The [combined ERD](erd.md) links staged purchase approvals to request items, receipts, and stock batches. **Next:** reconcile the approval rules with the staged route and verify the model against the receipt and expiry scenarios.
 
 ### Progress updates
+
+- **2026-11-09 — Week 1: Approval workflow ERD documented.** Saved the [approval routing design](erd.md). **Next:** confirm workflow ownership and how a request resumes after being returned for revision.
+
+- **2026-11-09 — Week 1: Day 03 ERD draft reviewed.** The first sketch models approval routing and logging. **Next:** add purchase requests and submitted versions, then trace withdrawal and resubmission through the model.
 
 - **2026-11-09 — Week 1: Day 02 workflow rules confirmed.** Reviewed and accepted the rules for purchase approval, incoming inventory, and expiry warnings. **Next:** sketch the purchase request data model.
 

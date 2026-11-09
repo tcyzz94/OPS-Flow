@@ -78,6 +78,11 @@ Treat that entry as an **example only**, not as actual progress. Never copy it i
 - Keep documentation edits focused; do not overwrite unrelated user content.
 - If you lack permission or ability to edit files, provide a proposed README patch or clearly remind the owner what should be changed.
 
+## Git commit messages
+
+- When suggesting or writing a commit message, use one short line that describes the main change in plain language. Use a simple prefix when it helps, such as `docs: add approval and inventory ERD`.
+- Add a commit body only when the owner asks for one or the reason for the change needs context.
+
 ## End-of-session checklist
 
 Before ending any meaningful coding/review interaction:

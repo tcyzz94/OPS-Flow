@@ -86,9 +86,17 @@ Dependencies and architectural decisions will be documented as they are adopted,
 
 **Week 1 — Define the problem and establish the foundation.**
 
-The [product brief](Week%201/product%20brief.md) limits the first version to purchase-request approval, inventory tracking, and expiry warnings, with employee / operator and boss / approver roles. Separate purchasing officer and admin roles, purchase order creation, invoice approval, and payment processing are excluded. These features remain planned. The brief contains three core use cases. **Next:** clarify approver terminology and permissions while documenting Day 02 workflow rules.
+The [product brief](README/product%20brief.md) limits the first version to purchase-request approval, inventory tracking, and expiry warnings, with employee / operator and boss / approver roles. Separate purchasing officer and admin roles, purchase order creation, invoice approval, and payment processing are excluded. These features remain planned. The [Day 02 workflow rules](README/workfloe-rules.md) document the reviewed MVP behavior for all three use cases. **Next:** sketch the purchase request data model, including request items, status, and decision history.
 
 ### Progress updates
+
+- **2026-11-09 — Week 1: Day 02 workflow rules confirmed.** Reviewed and accepted the rules for purchase approval, incoming inventory, and expiry warnings. **Next:** sketch the purchase request data model.
+
+- **2026-11-09 — Week 1: Workflow review findings addressed.** Clarified receipt retries, approval corrections, and receipt balance checks. Added expected outcomes for receipt and expiry edge cases. **Next:** confirm the revised rules before implementation.
+
+- **2026-11-09 — Week 1: Proposed workflow rules documented.** Filled in the [Day 02 rules and expected outcomes](README/workfloe-rules.md) for all three use cases. **Next:** review the proposed MVP decisions before implementation.
+
+- **2026-11-09 — Week 1: Draft workflow diagrams documented.** Added diagrams for purchase approval, incoming inventory, and expiry warnings. **Next:** review the diagrams and resolve the open rules.
 
 - **2026-11-07 — Week 1: Product framing and MVP roles documented.** The brief records problem framing, three core use cases, and scope exclusions. The MVP uses employee / operator and boss / approver roles; separate purchasing officer and admin roles are excluded. Chapter 01 remains planned pending implementation. **Next:** document workflow rules, including approver permissions and legal state transitions.
 
